@@ -1,4 +1,5 @@
-x = 1
-if x == 1:
-    # indented four spaces
-    print("x is 1.")
+def foo(a):  # NonCompliant
+    b = 12
+    if a == 1:
+        return b
+    return b
